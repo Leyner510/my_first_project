@@ -1,0 +1,15 @@
+{% extends 'main/base.html '%}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+    <h1>Главная страница</h1>
+    {% for per in person %}
+        <div class="alert alert-warning mt-2">
+            <h3>{{ per.name }}</h3>
+            <p>{{ per.description }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
