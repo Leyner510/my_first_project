@@ -1,6 +1,1 @@
-# site
-# my_first_project
-# my_first_project
-# my_first_project
-# my_first_project
-# my_first_project
+#It's my site for my love! <3
