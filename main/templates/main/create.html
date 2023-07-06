@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'main/base.html '%}
+
+{% block title %}
+Создать персонажа
+{% endblock %}
+
+{% block content %}
+    <h1>Создать персонажаа</h1>
+    <form method="post">
+        {{ form.name }}<br>
+        {{ form.description }}<br>
+        <button type="submit" class="btn btn-succes">Добавить</button>
+    </form>
+{% endblock %}

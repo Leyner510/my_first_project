@@ -18,12 +18,13 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path
-from main.views import index, person_list
+from main.views import index, person_list,create
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='home'),
     path('person/', person_list, name='person_list'),
+    path('create', create, name='create')
 
 ]
 if settings.DEBUG:
